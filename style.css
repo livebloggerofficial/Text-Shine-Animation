@@ -1,0 +1,35 @@
+.shine-text-container {
+  padding: 16px 32px;
+  background: rgb(34, 0, 0);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.shine-text-container .shine-text {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0 48px;
+
+  background: linear-gradient(
+    to right,
+    rgb(255 44 44) 0%,
+    rgb(255 251 20) 16%,
+    rgb(255 44 44) 32%
+  );
+
+  -webkit-background-clip: text;
+  color: transparent;
+  background-position: -40px;
+}
+
+.shine-text-container:hover .shine-text {
+  animation: shineText 2000ms infinite;
+}
+
+@keyframes shineText {
+  to {
+    background-position: 240px;
+  }
+}
